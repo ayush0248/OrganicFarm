@@ -1,0 +1,84 @@
+/* src/styles/Navbar.css */
+.navbar {
+  background-color: white;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.navbar-container {
+  color: #0F4229;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 60px;
+}
+
+.company-name {
+
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0F4229;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  margin: 10px;
+}
+
+.navbar-logo-img {
+  height: 80px;
+  width: auto;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  color:  var(#0F4229);
+  text-decoration: none;
+  margin-right: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  
+  transition: 0.2s;
+  outline: none;
+}
+
+.navbar-item:hover {
+  color: #258a2a;
+  transform: scale(1.09);
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: row;
+    width: 100%;
+  
+  }
+
+  .navbar-item {
+    text-decoration: none;
+    margin-left: 35px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,95 @@
+.services-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.services-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+  height: 300px; /* Fixed height for the card */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .service-content {
+  background-color: rgb(255, 255, 255); /* Slightly transparent background for content */
+  padding: 55px 0px;
+
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.service-card:hover .service-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background when hovered */
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: white;
+}
+
+.service-card:hover .service-icon {
+  filter: invert(1); /* Inverts the icon color to white */
+}
+
+.service-link{
+display: inline-block;
+margin-top: 10px;
+color: #007BFF;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+cursor: pointer;  /* Ensure the cursor changes to a pointer */
+}
+
+.service-link:hover{
+  color: #0056b3;
+}

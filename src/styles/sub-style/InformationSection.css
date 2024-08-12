@@ -1,0 +1,57 @@
+/* src/components/InformationSection.css */
+
+.information-section {
+  padding: 40px 20px;
+  background-color: #ffffffc0;
+  text-align: center;
+}
+
+.information-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.video-player {
+  margin: 10px 10px 20px;
+  padding: 16px;
+}
+
+.video-player iframe {
+  width: 50%;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+.video-carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-item {
+  margin: 20px;
+  padding: 16px;
+  width: 60px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+
+.video-item img {
+  margin-left: 107px;
+  width: 52%;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.video-item p {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #000000;
+}
